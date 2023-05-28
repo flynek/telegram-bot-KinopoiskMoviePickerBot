@@ -118,6 +118,12 @@ async def pay_film(callback: types.CallbackQuery):
 async def successful_payment(message: types.Message):
     await bot.delete_message(chat_id=message.chat.id, message_id=message.message_id)
     await bot.send_message(chat_id=message.chat.id, text='Благодарим за покупку!')
+    
+    
+@dp.pre_checkout_query_handler()
+async def check(query: types.PreCheckoutQuery):
+    await bot.answer_pre_checkout_query(query.id, ok=True)
+
 
 
 # обработчик текстовых сообщений
