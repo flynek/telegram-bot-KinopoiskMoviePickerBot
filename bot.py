@@ -8,10 +8,10 @@ from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton, InputMedia
 logging.basicConfig(level=logging.INFO)
 
 # инициализация бота и диспетчера
-bot = Bot(token='5950457311:AAExTbWgWP7QuRf5bIEO6SCaGrLyVBTp6Vk')
+bot = Bot(token='https://youtu.be/dQw4w9WgXcQ')
 dp = Dispatcher(bot)
-KINO_TOKEN = 'dd6049e6-6829-4ca4-bd57-11ff09593512'
-PAYMENT_TOKEN = '1744374395:TEST:a446a03670fc1b0f7781'
+KINO_TOKEN = 'https://youtu.be/dQw4w9WgXcQ'
+PAYMENT_TOKEN = 'https://youtu.be/dQw4w9WgXcQ'
 index = 0
 movies = []
 caption, poster, year = '', '', ''
