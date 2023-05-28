@@ -100,6 +100,8 @@ async def pay_film(callback: types.CallbackQuery):
         price = 500_00
     elif int(year) <= 1913:
         price = 10_00
+    elif int(year) == 2023:
+        price = 500_00
     else:
         price = 500_00 * ((2023 - int(year)) / 100)
     await bot.send_invoice(title=lines[0],
