@@ -31,7 +31,7 @@ kb_cancel = InlineKeyboardMarkup().add(InlineKeyboardButton('Отмена', call
 async def movie_tinder(movies: list, index: int, message: types.Message,
                        bot: Bot, kb: InlineKeyboardMarkup):
     global caption, poster, year
-    if len(movies[index].get('description')) >= 4060:
+    if len(movies[index].get('description')) >= 1000:
         index += 1
     movie = movies[index]
     name = movie.get('nameRu', 'Название не найдено')
